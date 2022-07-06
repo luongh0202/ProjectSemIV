@@ -1,0 +1,70 @@
+
+
+.logo__image--small {
+    max-height: 2.14286em;
+}
+
+.logo__image--medium {
+    max-height: 3.28571em;
+}
+
+.logo__image--large {
+    max-height: 4.57143em;
+}
+
+@media (min-width: 1000px) {
+    .logo__image--small {
+        max-height: 3.85714em;
+    }
+
+    .logo__image--medium {
+        max-height: 6.28571em;
+    }
+
+    .logo__image--large {
+        max-height: 8.71429em;
+    }
+}
+
+.logo--center {
+    text-align: center;
+}
+
+.logo--left {
+    text-align: left;
+}
+
+.logo--right {
+    text-align: right;
+}
+
+
+
+body.body--custom-background-image{
+    background:url(//bizweb.dktcdn.net/100/087/870/themes/530298/assets/checkout_body_background_image.jpg?1495197684947) center top;
+}
+
+
+
+@media (min-width: 992px)
+{
+    
+
+    .order-summary.order-summary--custom-background-image {
+        background:url(//bizweb.dktcdn.net/100/087/870/themes/530298/assets/checkout_sidebar_background_image.jpg?1495197684947) center top;
+    }
+}
+
+@media (max-width: 992px)
+{
+   
+
+    .order-summary.order-summary--custom-background-image:after {
+        background:url(//bizweb.dktcdn.net/100/087/870/themes/530298/assets/checkout_sidebar_background_image.jpg?1495197684947) center top;
+    }
+}
+
+.order-summary--custom-background-image.sidebar:after{
+   background:url(//bizweb.dktcdn.net/100/087/870/themes/530298/assets/checkout_sidebar_background_image.jpg?1495197684947) center top;
+}
+

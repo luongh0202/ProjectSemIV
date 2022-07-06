@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://ws/" xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="checkOrder" type="tns:checkOrder"/>
+
+  <xs:element name="checkOrderResponse" type="tns:checkOrderResponse"/>
+
+  <xs:element name="finishOrder" type="tns:finishOrder"/>
+
+  <xs:element name="finishOrderResponse" type="tns:finishOrderResponse"/>
+
+  <xs:complexType name="checkOrder">
+    <xs:sequence>
+      <xs:element name="merchantName" type="xs:string" minOccurs="0"/>
+      <xs:element name="accNo" type="xs:string" minOccurs="0"/>
+      <xs:element name="accName" type="xs:string" minOccurs="0"/>
+      <xs:element name="playmentAmount" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="checkOrderResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="finishOrder">
+    <xs:sequence>
+      <xs:element name="transachtionId" type="xs:int"/>
+      <xs:element name="merchantName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="finishOrderResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

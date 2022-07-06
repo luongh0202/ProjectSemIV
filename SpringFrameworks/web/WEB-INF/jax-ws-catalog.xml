@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PaymentDemo/PaymentWebservice?wsdl" uri="wsdl/localhost_8080/PaymentDemo/PaymentWebservice.wsdl"/>
+    <system systemId="http://localhost:8080/PaymentDemo/PaymentWebservice?xsd=1" uri="wsdl/localhost_8080/PaymentDemo/PaymentWebservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:36411/PaymentDemo/PaymentWebservice?wsdl" uri="wsdl/localhost_36411/PaymentDemo/PaymentWebservice.wsdl"/>
+    <system systemId="http://localhost:36411/PaymentDemo/PaymentWebservice?xsd=1" uri="wsdl/localhost_36411/PaymentDemo/PaymentWebservice.xsd_1.xsd"/>
+</catalog>
