@@ -9,11 +9,8 @@
     <div class="footer-inner">
         <div class="footer-content">
             <span class="bigger-120">
-                <span class="blue bolder">Bách Khoa</span>
-                Aptech &copy; 2016-2017
+                <span class="blue bolder">Bách Khoa</span> Aptech
             </span>
-
-            &nbsp; &nbsp;
             <span class="action-buttons">
                 <a href="#">
                     <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>

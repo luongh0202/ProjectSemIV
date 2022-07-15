@@ -24,40 +24,16 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _CheckOrder_QNAME = new QName("http://ws/", "checkOrder");
-    private final static QName _CheckOrderResponse_QNAME = new QName("http://ws/", "checkOrderResponse");
-    private final static QName _FinishOrder_QNAME = new QName("http://ws/", "finishOrder");
     private final static QName _FinishOrderResponse_QNAME = new QName("http://ws/", "finishOrderResponse");
+    private final static QName _CheckOrderResponse_QNAME = new QName("http://ws/", "checkOrderResponse");
+    private final static QName _CheckOrder_QNAME = new QName("http://ws/", "checkOrder");
+    private final static QName _FinishOrder_QNAME = new QName("http://ws/", "finishOrder");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: ws
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link CheckOrder }
-     * 
-     */
-    public CheckOrder createCheckOrder() {
-        return new CheckOrder();
-    }
-
-    /**
-     * Create an instance of {@link CheckOrderResponse }
-     * 
-     */
-    public CheckOrderResponse createCheckOrderResponse() {
-        return new CheckOrderResponse();
-    }
-
-    /**
-     * Create an instance of {@link FinishOrder }
-     * 
-     */
-    public FinishOrder createFinishOrder() {
-        return new FinishOrder();
     }
 
     /**
@@ -69,12 +45,36 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CheckOrder }{@code >}}
+     * Create an instance of {@link CheckOrderResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://ws/", name = "checkOrder")
-    public JAXBElement<CheckOrder> createCheckOrder(CheckOrder value) {
-        return new JAXBElement<CheckOrder>(_CheckOrder_QNAME, CheckOrder.class, null, value);
+    public CheckOrderResponse createCheckOrderResponse() {
+        return new CheckOrderResponse();
+    }
+
+    /**
+     * Create an instance of {@link CheckOrder }
+     * 
+     */
+    public CheckOrder createCheckOrder() {
+        return new CheckOrder();
+    }
+
+    /**
+     * Create an instance of {@link FinishOrder }
+     * 
+     */
+    public FinishOrder createFinishOrder() {
+        return new FinishOrder();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link FinishOrderResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws/", name = "finishOrderResponse")
+    public JAXBElement<FinishOrderResponse> createFinishOrderResponse(FinishOrderResponse value) {
+        return new JAXBElement<FinishOrderResponse>(_FinishOrderResponse_QNAME, FinishOrderResponse.class, null, value);
     }
 
     /**
@@ -87,21 +87,21 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CheckOrder }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws/", name = "checkOrder")
+    public JAXBElement<CheckOrder> createCheckOrder(CheckOrder value) {
+        return new JAXBElement<CheckOrder>(_CheckOrder_QNAME, CheckOrder.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FinishOrder }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://ws/", name = "finishOrder")
     public JAXBElement<FinishOrder> createFinishOrder(FinishOrder value) {
         return new JAXBElement<FinishOrder>(_FinishOrder_QNAME, FinishOrder.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FinishOrderResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws/", name = "finishOrderResponse")
-    public JAXBElement<FinishOrderResponse> createFinishOrderResponse(FinishOrderResponse value) {
-        return new JAXBElement<FinishOrderResponse>(_FinishOrderResponse_QNAME, FinishOrderResponse.class, null, value);
     }
 
 }

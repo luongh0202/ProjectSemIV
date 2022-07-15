@@ -25,8 +25,8 @@ import javax.mail.internet.MimeMessage;
 public class EmailUtil {
     private static final String host = "smtp.gmail.com";
     private static final String port = "587";
-    private static final String userName = "testsendmailjavaweb@gmail.com";
-    private static final String password = "admin123@";
+    private static final String userName = "iofabkap@gmail.com";
+    private static final String password = "bkap123456";
     public static void sendMail(String recipent,String subject,String message) 
             throws AddressException, MessagingException {
         // set cac thuoc tinh

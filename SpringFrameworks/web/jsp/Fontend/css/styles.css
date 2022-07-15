@@ -1256,7 +1256,8 @@ body {
   }
     .product-grid .actions .btn-transparent {
       line-height: 36px;
-		width:50%;
+		width:100%;
+                margin-bottom: 10px;
       font-size: 12px;
 		border:solid 1px #e6e6e6;
 		text-align:center;
@@ -2711,9 +2712,11 @@ body {
 	z-index:800;
 }
 #toolbox a {
-	display:block;
-	width:34px;
-	height:34px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
 	line-height:34px;
 	color:#fff;
 	font-size:16px;
